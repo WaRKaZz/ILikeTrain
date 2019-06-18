@@ -6,7 +6,6 @@ public class RailwayCarriage {
     private int weight;
     private String type;
 
-
     public RailwayCarriage(){
         weight = 4000;
         type = "Cargo";
