@@ -11,7 +11,6 @@ public class Train {
     private Locomotive Locomotive = new Locomotive();
     private double acceleration;
 
-
     public int getNumberOfCars() {
         return numberOfCars;
     }
@@ -80,9 +79,6 @@ public class Train {
         return returningMessage;
     }
 
-
-
-
     public boolean isTypeNormal(){
         boolean returnedIsNormal = true;
         for (int i = 0; i < numberOfCars; i++){
@@ -104,10 +100,6 @@ public class Train {
         return returnedIsNormal;
     }
 
-
-
-
-
     public void runTrain(int distance){  //Запустить поезд
         if (isReady()&&isTypeNormal()){
             System.out.println("Arrival time about: " + distance/Locomotive.getMaxSpeed()*0.8 + " hours");
@@ -116,13 +108,11 @@ public class Train {
         }
     }
 
-    private void railwayCarriageGenerate(String typeOfCarriages){                               // Генератор Повозок
+    private void railwayCarriageGenerate(String typeOfCarriages){                               // Generator Carriage
         for (int i = 0; i<numberOfCars; i++){
-
             int generatedType = 1;
             String generatedStringType = "";
             int generatedWeight = 0;
-
 
             switch (typeOfCarriages){            //Какие вагоны генерируются?
                 case ("Random"):
@@ -155,11 +145,11 @@ public class Train {
         }
     }
 
-    private void railwayLocomotiveGenerate(String typeOfLocomotive){    // Генератор Локомотива
+    private void railwayLocomotiveGenerate(String typeOfLocomotive){    // Locomotive Generator
         String generatedStringType = "";
         int generatedPower = 0;
 
-        switch (typeOfLocomotive) {            //Какой локомотив генеровать?
+        switch (typeOfLocomotive) {            //Which is?
             case ("Random"):
                 if (((int) (Math.random() * 2)) == 1) {
                     generatedStringType = "Coach";
