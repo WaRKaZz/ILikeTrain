@@ -24,7 +24,5 @@ public class Main {
         Train3.setNumberOfCars(64);
         Train3.trainGenerate("Cargo");
         Train3.runTrain(2000);
-
-
     }
 }
