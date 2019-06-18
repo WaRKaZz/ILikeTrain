@@ -5,7 +5,6 @@ public class Locomotive extends RailwayCarriage {
     private String type;
     private int maxSpeed = 100;
 
-
     public Locomotive(){
         power = 4000;
         type = "Cargo";
@@ -44,7 +43,6 @@ public class Locomotive extends RailwayCarriage {
         }
 
     }
-
 
     public void setType(String tag){
         this.type = tag;
